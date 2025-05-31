@@ -1,6 +1,4 @@
-FROM node:latest
-WORKDIR /usr/src/app
-COPY nodeapp/* /
-RUN npm install
-EXPOSE 3000
-CMD [ "npm","start" ]
+FROM ubuntu
+MAINTAINER tHIRUMAL
+COPY file1.txt
+CMD /bin/echo "This is my Docker file"
